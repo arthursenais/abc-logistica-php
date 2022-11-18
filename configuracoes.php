@@ -32,7 +32,7 @@ if (isset($_POST['excluirconta'])) {
         $sql = "DELETE FROM usuario WHERE id={$usuario['id']}";
         $resultado = $mysqli->query($sql);
         header("Location: sair.php");
-    } else echo '<script> alert("Não realizado. Senha incorreta")</script>';
+    } else { echo '<script> alert("Não realizado. Senha incorreta")</script>';}
   
 }
 
@@ -44,7 +44,7 @@ if (isset($_POST['excluirconta'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Index | Configurações</title>
+    <title>Configurações | ABC logistica</title>
 </head>
 <body>
     <header>

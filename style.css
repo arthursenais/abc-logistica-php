@@ -10,8 +10,6 @@ body {
     flex-direction: column;
 }
 
-
-
 header img {
     max-width: 250px;
     margin: 1%;
@@ -47,7 +45,6 @@ footer img {
     margin: 0;
     align-self: center;
 }
-
 
 #corpo1 a:hover {
     color: #4a48fc;
@@ -88,7 +85,6 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #esquerda {
@@ -109,16 +105,19 @@ footer img {
     transition: 0.2s;
     padding: 0;
     margin: 0;
+    width: min-content;
 }
 
 #esquerda a:hover {
     color: #acaafd;
 }
-#categorias{
+
+#categorias {
     display: flex;
     flex-flow: column wrap;
 }
-#esquerda form{
+
+#esquerda form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -140,6 +139,7 @@ footer img {
     box-shadow: 5px 5px 10px;
     gap: 10px;
 }
+
 #categorias {
     display: flex;
     flex-flow: column wrap;
@@ -218,7 +218,8 @@ footer img {
     gap: 20px;
     width: 100%;
 }
-footer{
+
+footer {
     box-shadow: -2px 10px 10px 10px black;
     position: sticky;
     display: flex;
@@ -228,14 +229,15 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-#form-deletar{
-   display: flex;
-   flex-direction: row;
-   gap: 10px;
+
+#form-deletar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: 30%;
     align-items: center;
-   
 }
+
 .botao2 {
     font-size: 15px;
     border-radius: 5px;
@@ -244,18 +246,20 @@ footer{
     color: rgb(70, 70, 70);
     transition: 0.2s;
 }
+
 .botao2:hover {
-   background-color: red;
-   color:white;
-   cursor: pointer;
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
 
-.wrapper{
+.wrapper {
     flex: 1;
 }
+
 header {
     background-color: rgb(32, 32, 32);
-    position:sticky;
+    position: sticky;
     top: 0;
     box-shadow: 1px 1px 3px 1px black;
 }

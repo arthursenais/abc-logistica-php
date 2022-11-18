@@ -93,7 +93,8 @@ date_default_timezone_set('America/Sao_Paulo');
                     <div>
                     <p class="dia sem-margem">para: '. $row['destinatario'].'</p>
                         <h3 class="sem-margem">'. $row['conteudo_relatorio'].'</h3>
-                        <p class="dia sem-margem">'. $row['data_relatorio'].'</p>
+                        <p class="dia sem-margem">'. strftime('%d/%m/%y - %R
+                        ',strtotime($row['data_relatorio'])).'</p>
                     </div>
                         <form method="post">
                     
@@ -112,11 +113,11 @@ date_default_timezone_set('America/Sao_Paulo');
                     <div class="cartao">
                     <div>
                     <p class="dia sem-margem">para: você</p>
-                        <h3 class="sem-margem"'. $row['conteudo_relatorio'].'</h3>
-                        <p class="dia sem-margem">'. $row['data_relatorio'].'</p>
+                        <h3 class="sem-margem">'. $row['conteudo_relatorio'].'</h3>
+                        <p class="dia sem-margem">'. strftime('%d/%m/%y - %H:%M',strtotime($row['data_relatorio'])).'</p>
                     </div>
                         <form method="post">
-                    
+                
                             <input type="hidden" name="id" value="'.$row['id'].'">
                             
                             <input type="submit" value="Remover" name="remover"> </form>
@@ -125,7 +126,7 @@ date_default_timezone_set('America/Sao_Paulo');
                 </div>'; }
                 }
             }
-
+    
             if (isset($_POST['adicionar'])){  
                 $data = date('Y-m-d H:i:s');
                 $_POST['conteudo'] = htmlspecialchars($_POST['conteudo']);
